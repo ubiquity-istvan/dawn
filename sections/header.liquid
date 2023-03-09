@@ -30,31 +30,17 @@
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
+{% if section.settings.enable_transparent_header_home and request.page_type == 'index' %}
+  {%- assign transparent_header = true -%}
+{%- endif -%}
+
 <style>
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
   }
 
-  {% if section.settings.enable_transparent_header_home and request.page_type == 'index' %}
-    .header-wrapper {
-      position: absolute;
-      width: 100%;
-      transition: background var(--duration-short) ease-in, color var(--duration-short) ease-in;
-    }
-    
-    .section-header:not(.scrolled-past-header) .header-wrapper.gradient:not(:hover):not(:focus-within) {
-      background: transparent;
-    }
-    
-    .section-header:not(.scrolled-past-header) .header-wrapper:not(:hover):not(:focus-within) .header__heading-logo--transparent {
-      display: block;
-    }
-
-    .section-header:not(.scrolled-past-header) .header-wrapper:not(:hover):not(:focus-within) .header__heading-logo:not(.header__heading-logo--transparent) {
-      display: none;
-    }
-    
+  {% if transparent_header %}
     .section-header:not(.scrolled-past-header) .header-wrapper:not(:hover):not(:focus-within) .header__icon,
     .section-header:not(.scrolled-past-header) .header-wrapper:not(:hover):not(:focus-within) .header__menu-item {
       color: {{ section.settings.transparent_text_color }};
@@ -192,7 +178,7 @@
       assign localization_forms = true
     endif
   -%}
-  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
+  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}{% if transparent_header %} header-wrapper--transparent{% endif %}">
     {%- liquid
       if section.settings.menu != blank
         render 'header-drawer'
