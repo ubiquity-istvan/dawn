@@ -41,16 +41,25 @@
   }
 
   {% if transparent_header %}
-    .section-header:not(.scrolled-past-header) .header-wrapper:not(.header-wrapper--dropdown):not(:focus-within) .header__icon,
-    .section-header:not(.scrolled-past-header) .header-wrapper:not(.header-wrapper--dropdown):not(:focus-within) .header__menu-item,
-    .section-header:not(.scrolled-past-header) .header-wrapper:not(.header-wrapper--dropdown):not(:focus-within) .header__active-menu-item,
-    .section-header:not(.scrolled-past-header) .header-wrapper:not(.header-wrapper--dropdown):not(:focus-within) .header__heading-link,
-    .section-header:not(.scrolled-past-header) .header-wrapper--dropdown .header__icon,
-    .section-header:not(.scrolled-past-header) .header-wrapper--dropdown .header__menu-item,
-    .section-header:not(.scrolled-past-header) .header-wrapper--dropdown .header__active-menu-item,
-    .section-header:not(.scrolled-past-header) .header-wrapper--dropdown .header__heading-link {
+    .section-header:not(.scrolled-past-header) .header-wrapper:not(:focus-within) .header__icon,
+    .section-header:not(.scrolled-past-header) .header-wrapper:not(:focus-within) .header__menu-item,
+    .section-header:not(.scrolled-past-header) .header-wrapper:not(:focus-within) .header__active-menu-item,
+    .section-header:not(.scrolled-past-header) .header-wrapper:not(:focus-within) .header__heading-link {
       color: {{ section.settings.transparent_text_color }};
     }
+
+    @media screen and (min-width: 990px) {
+      .section-header:not(.scrolled-past-header) .header-wrapper:not(.header-wrapper--dropdown):not(:focus-within) .header__icon,
+      .section-header:not(.scrolled-past-header) .header-wrapper:not(.header-wrapper--dropdown):not(:focus-within) .header__menu-item,
+      .section-header:not(.scrolled-past-header) .header-wrapper:not(.header-wrapper--dropdown):not(:focus-within) .header__active-menu-item,
+      .section-header:not(.scrolled-past-header) .header-wrapper:not(.header-wrapper--dropdown):not(:focus-within) .header__heading-link,
+      .section-header:not(.scrolled-past-header) .header-wrapper--dropdown .header__icon,
+      .section-header:not(.scrolled-past-header) .header-wrapper--dropdown .header__menu-item,
+      .section-header:not(.scrolled-past-header) .header-wrapper--dropdown .header__active-menu-item,
+      .section-header:not(.scrolled-past-header) .header-wrapper--dropdown .header__heading-link {
+        color: {{ section.settings.transparent_text_color }};
+      }
+   }
   {% endif %}
 
   .header__heading-logo--transparent {
