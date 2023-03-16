@@ -2397,6 +2397,10 @@ product-info .loading-overlay:not(.hidden) ~ *,
   transition: background var(--duration-default) ease-in, color var(--duration-default) ease-in;
 }
 
+.header__heading-logo--transparent {
+  display: none;
+}
+
 .section-header:not(.scrolled-past-header) .header-wrapper--transparent.gradient:not(:focus-within) {
   background: transparent;
 }
