@@ -2394,6 +2394,9 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .header-wrapper--transparent {
   position: absolute;
   width: 100%;
+}
+
+.header-wrapper--transparent:not(.header-wrapper--mega) {
   transition: background var(--duration-default) ease-in, color var(--duration-default) ease-in;
 }
 
