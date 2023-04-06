@@ -67,7 +67,7 @@
    }
   {% endif %}
 
-  {% if section.settings.sticky_header_type != 'always' %}
+  {% if section.settings.sticky_header_type == 'on-scroll-up' %}
     .section-header.scrolled-past-header .header-wrapper.gradient:not(:focus-within) {
       animation: headerReveal var(--duration-long) ease;
     }
