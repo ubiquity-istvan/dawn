@@ -43,6 +43,10 @@
     padding: 0 8rem 0 0;
   }
 
+  .product__info-wrapper--full-height {
+    height: 100%;
+  }
+
   .product--right .product__media-list {
     margin-bottom: 2rem;
   }
