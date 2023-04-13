@@ -116,6 +116,13 @@
 
                   <!-- Working YOLO - Add this to the main-product.liquid template file in shopify -->
 
+                  {% comment %} Metafield images test {% endcomment %}
+                  {% for field in product.metafields.custom.images.value %}
+                    <div><img src="{{ field }}"></div>
+                  {% endfor %}
+
+                 
+
 {% assign dates = product.metafields.custom.course_1_dates | split: ',' %}
 {% if dates %}
   <select
