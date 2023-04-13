@@ -1,0 +1,165 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "6f037c38-a087-4c78-bb87-d8801d39f0a0": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18678986998063__6f037c38-a087-4c78-bb87-d8801d39f0a0-16813762624a764461-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Looking for a new job?Check out our jobs.",
+            "heading_size": "h0"
+          }
+        },
+        "template--18678986998063__6f037c38-a087-4c78-bb87-d8801d39f0a0-16813762624a764461-1": {
+          "type": "text",
+          "settings": {
+            "text": "Embark on a new journey in the fastest growing construction company in the UK.",
+            "text_style": "body"
+          }
+        },
+        "template--18678986998063__6f037c38-a087-4c78-bb87-d8801d39f0a0-16813762624a764461-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Job Listings Below",
+            "button_link_1": "shopify:\/\/pages\/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18678986998063__6f037c38-a087-4c78-bb87-d8801d39f0a0-16813762624a764461-0",
+        "template--18678986998063__6f037c38-a087-4c78-bb87-d8801d39f0a0-16813762624a764461-1",
+        "template--18678986998063__6f037c38-a087-4c78-bb87-d8801d39f0a0-16813762624a764461-2"
+      ],
+      "custom_css": [
+        "div {color: black;}",
+        "h2 {color: black; font-size: 60px; font-weight: 500; line-height: 1.2; width: 130%;}",
+        "a {background: green; color: white;}",
+        "p {max-width: 380px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/pixelcut-export_2-min.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "0adb9608-5258-429e-a5e8-445a377f00d8": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18678986998063__0adb9608-5258-429e-a5e8-445a377f00d8-16813762096c18f67b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our  mission",
+            "heading_size": "h1"
+          }
+        },
+        "template--18678986998063__0adb9608-5258-429e-a5e8-445a377f00d8-16813762096c18f67b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The O’Halloran & O’Brien Construction Training Academy is a world class training facility tailored to deliver excellence and replicate a construction environment, providing multi-dimensional skills training interventions to the highest standards.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--18678986998063__0adb9608-5258-429e-a5e8-445a377f00d8-16813762096c18f67b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18678986998063__0adb9608-5258-429e-a5e8-445a377f00d8-16813762096c18f67b-0",
+        "template--18678986998063__0adb9608-5258-429e-a5e8-445a377f00d8-16813762096c18f67b-1",
+        "template--18678986998063__0adb9608-5258-429e-a5e8-445a377f00d8-16813762096c18f67b-2"
+      ],
+      "custom_css": [
+        "h2 {border-bottom: 1px solid green;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/construction-worker-in-protective-gear.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "4bff08f4-724d-4c0c-9dcc-bfbd3d543cc7": {
+      "type": "image-with-text",
+      "blocks": {
+        "4119803a-8654-4152-b8ec-6f4f0aee3f2a": {
+          "type": "heading",
+          "settings": {
+            "heading": "<span style=\"text-decoration:underline\">Our mission<\/span>",
+            "heading_size": "h1"
+          }
+        },
+        "cf8127d7-68ed-4589-96e9-4c85072aa630": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The O’Halloran & O’Brien Construction Training Academy is a world class training facility tailored to deliver excellence and replicate a construction environment, providing multi-dimensional skills training interventions to the highest standards.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "0558a45f-f046-45a1-9750-11b231d4e58d": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "4119803a-8654-4152-b8ec-6f4f0aee3f2a",
+        "cf8127d7-68ed-4589-96e9-4c85072aa630",
+        "0558a45f-f046-45a1-9750-11b231d4e58d"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/construction-worker-in-protective-gear.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6f037c38-a087-4c78-bb87-d8801d39f0a0",
+    "0adb9608-5258-429e-a5e8-445a377f00d8",
+    "4bff08f4-724d-4c0c-9dcc-bfbd3d543cc7"
+  ]
+}
