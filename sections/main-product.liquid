@@ -116,10 +116,7 @@
 
                   <!-- Working YOLO - Add this to the main-product.liquid template file in shopify -->
 
-                  {% comment %} Metafield images test {% endcomment %}
-                  {% for field in product.metafields.custom.images.value %}
-                    <div><img src="{{ field }}"></div>
-                  {% endfor %}
+               
 
                  
 
@@ -665,6 +662,24 @@
       ]
     }
   </script>
+
+
+     {% comment %} Testing For field value update for make {% endcomment %}
+     <script>
+      const submitButton = document.querySelector("#ProductSubmitButton-template--18666448617775__main");
+
+function updateFormField() {
+const formFirstName = document.querySelector("#first-name");
+
+console.log(formFirstName.value);
+
+formFirstName.setAttribute("value", formFirstName.value);
+
+console.log(formFirstName.value);
+}
+
+submitButton.addEventListener("click", updateFormField);
+    </script>
 </section>
 
 {% schema %}
