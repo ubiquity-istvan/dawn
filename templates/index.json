@@ -174,6 +174,13 @@
           "settings": {
             "custom_liquid": "<button> to product <\/button>"
           }
+        },
+        "7bdbbc05-df7e-4e06-970f-9c4794eea0c0": {
+          "type": "text",
+          "settings": {
+            "text": "This is a great course you should buy. NOW! pls.",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -184,7 +191,8 @@
         "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-4",
         "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-5",
         "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-6",
-        "5e9f44ad-e0bd-40b1-b074-e5e7b8ce99ba"
+        "5e9f44ad-e0bd-40b1-b074-e5e7b8ce99ba",
+        "7bdbbc05-df7e-4e06-970f-9c4794eea0c0"
       ],
       "settings": {
         "product": "first-course",
@@ -534,6 +542,13 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "a6b00bc1-5565-42d0-b296-d2e0ceaea003": {
+      "type": "custom-text",
+      "settings": {
+        "custom_text_title": "Title",
+        "custom_text_body": "<p>Your text goes here<\/p>"
+      }
     }
   },
   "order": [
@@ -547,6 +562,7 @@
     "7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6",
     "5aa78a38-2524-4698-958e-4bbfa4501d29",
     "multicolumn",
-    "bd1eec48-6e8d-432d-ab76-45cd562dd122"
+    "bd1eec48-6e8d-432d-ab76-45cd562dd122",
+    "a6b00bc1-5565-42d0-b296-d2e0ceaea003"
   ]
 }

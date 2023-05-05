@@ -108,7 +108,107 @@
                   {%- endif -%}
                 </div>
               {%- endif -%}
-           
+              <div {{ block.shopify_attributes }}>
+                {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+                {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                  {{ form | payment_terms }}
+
+                  <!-- Working YOLO - Add this to the main-product.liquid template file in shopify -->
+
+               
+
+                 
+
+{% assign dates = product.metafields.custom.course_1_dates | split: ',' %}
+{% if dates %}
+  <select
+    class="select__select"
+    id="icon"
+    name="properties[Date]"
+    data-class="properties_date"
+    form="{{ product_form_id }}"
+  >
+    {% for date in dates %}
+      <option value="{{ date | date: "%B %d, %Y" }}">{{ date | date: '%B %d, %Y' }}</option>
+    {% endfor %}
+  </select>
+{% endif %}
+
+
+<!-- Adding input fields -->
+<div class="attendees">
+
+{% comment %} Add more attendees {% endcomment %}
+<a class="button button--full-width button--secondary .attendees" href="#"
+>Add more attendees</a
+>
+  <p class="line-item-property__field">
+    <label for="first-name">First Name:</label>
+    <input
+      required
+      class="required"
+      id="first-name"
+      type="text"
+      name="properties[First Name]"
+      form="{{ product_form_id }}"
+    >
+  </p>
+
+  <p class="line-item-property__field">
+    <label for="last-name">Last Name</label>
+    <input
+      required
+      class="required"
+      id="last-name"
+      type="text"
+      name="properties[Last Name]"
+      form="{{ product_form_id }}"
+    >
+  </p>
+
+  <p class="line-item-property__field">
+    <label for="age">Age</label>
+    <input
+      required
+      class="required"
+      id="age"
+      type="text"
+      name="properties[Age]"
+      form="{{ product_form_id }}"
+    >
+  </p>
+
+  <p class="line-item-property__field">
+    <label for="contact-number">Contact Number</label>
+    <input
+      required
+      class="required"
+      id="contact-number"
+      type="text"
+      name="properties[Contact Number]"
+      form="{{ product_form_id }}"
+    >
+  </p>
+
+  <p class="line-item-property__field">
+    <label for="email-address">Email Address</label>
+    <input
+      required
+      class="required"
+      id="email-address"
+      type="text"
+      name="properties[Email Address]"
+      form="{{ product_form_id }}"
+    >
+  </p>
+</div>
+
+
+
+                  
+                {%- endform -%}
+              </div>
             {%- when 'inventory' -%}
               <p
                 class="product__inventory no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
@@ -306,112 +406,6 @@
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
-              <p>This is some text to test if I can edit the button</p>
-              <div {{ block.shopify_attributes }}>
-                {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
-                {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-
-                  {% comment %} Payment Form start {% endcomment %}
-                  {{ form | payment_terms }}
-
-                  <!-- Working YOLO - Add this to the main-product.liquid template file in shopify -->
-
-               
-
-                 
-
-{% assign dates = product.metafields.custom.course_1_dates | split: ',' %}
-{% if dates %}
-  <select
-    class="select__select"
-    id="icon"
-    name="properties[Date]"
-    data-class="properties_date"
-    form="{{ product_form_id }}"
-  >
-    {% for date in dates %}
-      <option value="{{ date | date: "%B %d, %Y" }}">{{ date | date: '%B %d, %Y' }}</option>
-    {% endfor %}
-  </select>
-{% endif %}
-
-
-<!-- Adding input fields -->
-<div class="attendees">
-
-{% comment %} Add more attendees {% endcomment %}
-<a class="button button--full-width button--secondary .attendees" href="#"
->Add more attendees</a
->
-  <p class="line-item-property__field">
-    <label for="first-name">First Name:</label>
-    <input
-      required
-      class="required"
-      id="first-name"
-      type="text"
-      name="properties[First Name]"
-      form="{{ product_form_id }}"
-    >
-  </p>
-
-  <p class="line-item-property__field">
-    <label for="last-name">Last Name</label>
-    <input
-      required
-      class="required"
-      id="last-name"
-      type="text"
-      name="properties[Last Name]"
-      form="{{ product_form_id }}"
-    >
-  </p>
-
-  <p class="line-item-property__field">
-    <label for="age">Age</label>
-    <input
-      required
-      class="required"
-      id="age"
-      type="text"
-      name="properties[Age]"
-      form="{{ product_form_id }}"
-    >
-  </p>
-
-  <p class="line-item-property__field">
-    <label for="contact-number">Contact Number</label>
-    <input
-      required
-      class="required"
-      id="contact-number"
-      type="text"
-      name="properties[Contact Number]"
-      form="{{ product_form_id }}"
-    >
-  </p>
-
-  <p class="line-item-property__field">
-    <label for="email-address">Email Address</label>
-    <input
-      required
-      class="required"
-      id="email-address"
-      type="text"
-      name="properties[Email Address]"
-      form="{{ product_form_id }}"
-    >
-  </p>
-</div>
-
-
-
-                  
-                {%- endform -%}
-                {% comment %} Paymnet form end {% endcomment %}
-              </div>
-
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
