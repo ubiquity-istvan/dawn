@@ -1,5 +1,6 @@
 {
   "current": {
+<<<<<<< HEAD
     "logo_width": 90,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
@@ -12,6 +13,33 @@
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
     "buttons_radius": 0,
+=======
+    "logo": "shopify:\/\/shop_images\/ohobta-logo.png",
+    "logo_width": 150,
+    "colors_solid_button_labels": "#ffffff",
+    "colors_accent_1": "#121212",
+    "gradient_accent_1": "",
+    "colors_accent_2": "#334fb4",
+    "gradient_accent_2": "",
+    "colors_text": "#121212",
+    "colors_outline_button_labels": "#121212",
+    "colors_background_1": "#ffffff",
+    "gradient_background_1": "",
+    "colors_background_2": "#f3f3f3",
+    "gradient_background_2": "",
+    "type_header_font": "work_sans_n4",
+    "heading_scale": 100,
+    "type_body_font": "work_sans_n4",
+    "body_scale": 100,
+    "page_width": 1400,
+    "spacing_sections": 80,
+    "spacing_grid_horizontal": 28,
+    "spacing_grid_vertical": 28,
+    "animations_reveal_on_scroll": true,
+    "buttons_border_thickness": 1,
+    "buttons_border_opacity": 100,
+    "buttons_radius": 4,
+>>>>>>> 084ab32d5d170584dcf7fb9ef68a310d02baca41
     "buttons_shadow_opacity": 0,
     "buttons_shadow_horizontal_offset": 0,
     "buttons_shadow_vertical_offset": 4,
@@ -94,6 +122,10 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
+<<<<<<< HEAD
+=======
+    "accent_icons": "text",
+>>>>>>> 084ab32d5d170584dcf7fb9ef68a310d02baca41
     "social_facebook_link": "",
     "social_instagram_link": "",
     "social_youtube_link": "",
@@ -125,6 +157,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "color_schemes": {
       "background-1": {
         "settings": {
@@ -182,6 +215,11 @@
         }
       }
     }
+=======
+    "content_for_index": [
+
+    ]
+>>>>>>> 084ab32d5d170584dcf7fb9ef68a310d02baca41
   },
   "presets": {
     "Default": {

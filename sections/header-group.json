@@ -17,6 +17,13 @@
         "announcement-bar-0"
       ],
       "settings": {
+<<<<<<< HEAD
+=======
+        "color_scheme": "accent-1",
+        "show_line_separator": true,
+        "auto_rotate": false,
+        "change_slides_speed": 5
+>>>>>>> 084ab32d5d170584dcf7fb9ef68a310d02baca41
       }
     },
     "header": {
