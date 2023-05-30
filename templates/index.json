@@ -6,27 +6,23 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Master Construction Skills with Expert Training",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Gain hands-on expertise from industry professionals and stay ahead in this dynamic field. Take the first step towards success today.",
             "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "See courses",
             "button_link_1": "shopify:\/\/collections\/all",
-<<<<<<< HEAD
             "button_style_secondary_1": true,
-=======
-            "button_style_secondary_1": false,
->>>>>>> 084ab32d5d170584dcf7fb9ef68a310d02baca41
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -40,84 +36,122 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/construction-in-progress.jpg",
-        "image_overlay_opacity": 30,
+        "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
-<<<<<<< HEAD
         "image_behavior": "none",
-=======
-        "image_behavior": "ambient",
->>>>>>> 084ab32d5d170584dcf7fb9ef68a310d02baca41
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
-    "3ee230fa-34b2-4ad9-a4cf-a135683cf614": {
-      "type": "image-with-text",
+    "927a87ce-6f07-4d07-bece-961c0bf52dd4": {
+      "type": "featured-product",
       "blocks": {
-        "template--18666448322863__3ee230fa-34b2-4ad9-a4cf-a135683cf614-1683211259121dd475-0": {
-          "type": "heading",
+        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-0": {
+          "type": "text",
           "settings": {
-<<<<<<< HEAD
-            "heading": "Is this the updated text?",
-=======
-            "heading": "Normal courses heading",
->>>>>>> 084ab32d5d170584dcf7fb9ef68a310d02baca41
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-1": {
+          "type": "title",
+          "settings": {
             "heading_size": "h1"
           }
         },
-        "template--18666448322863__3ee230fa-34b2-4ad9-a4cf-a135683cf614-1683211259121dd475-1": {
-          "type": "text",
+        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-2": {
+          "type": "price",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
           }
         },
-        "d9ca2bf8-0deb-4a8d-a4f4-3c2f86f3c919": {
-          "type": "button",
+        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-3": {
+          "type": "variant_picker",
           "settings": {
-            "button_label": "All normal courses",
-            "button_link": "shopify:\/\/collections\/great-courses"
+            "picker_type": "button"
+          }
+        },
+        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-4": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-6": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
           }
         }
       },
       "block_order": [
-        "template--18666448322863__3ee230fa-34b2-4ad9-a4cf-a135683cf614-1683211259121dd475-0",
-        "template--18666448322863__3ee230fa-34b2-4ad9-a4cf-a135683cf614-1683211259121dd475-1",
-        "d9ca2bf8-0deb-4a8d-a4f4-3c2f86f3c919"
+        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-0",
+        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-1",
+        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-2",
+        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-3",
+        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-4",
+        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-5",
+        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-6"
       ],
       "settings": {
-<<<<<<< HEAD
+        "product": "test-course-1",
+        "color_scheme": "inverse",
+        "secondary_background": true,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "right",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Is this the updated text?",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
-=======
-        "image": "shopify:\/\/shop_images\/measure-twice-cut-once.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "overlap",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
->>>>>>> 084ab32d5d170584dcf7fb9ef68a310d02baca41
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Normal courses",
+        "title": "Featured products",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -130,11 +164,7 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
-<<<<<<< HEAD
         "image_ratio": "adapt",
-=======
-        "image_ratio": "square",
->>>>>>> 084ab32d5d170584dcf7fb9ef68a310d02baca41
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -146,333 +176,57 @@
         "padding_bottom": 36
       }
     },
-    "1684e129-e2b8-4257-b899-7abd686b74e1": {
-      "type": "featured-product",
+    "collage": {
+      "type": "collage",
       "blocks": {
-        "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-0": {
-          "type": "text",
+        "collection-0": {
+          "type": "collection",
           "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
+            "collection": ""
           }
         },
-        "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-1": {
-          "type": "title",
+        "product": {
+          "type": "product",
           "settings": {
-            "heading_size": "h1"
+            "product": "",
+            "second_image": false
           }
         },
-        "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-2": {
-          "type": "price",
+        "collection-1": {
+          "type": "collection",
           "settings": {
-          }
-        },
-        "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-3": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-4": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-5": {
-          "type": "buy_buttons",
-          "disabled": true,
-          "settings": {
-            "show_dynamic_checkout": false
-          }
-        },
-        "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-6": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share"
-          }
-        },
-        "5e9f44ad-e0bd-40b1-b074-e5e7b8ce99ba": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<button> to product <\/button>"
-          }
-        },
-        "7bdbbc05-df7e-4e06-970f-9c4794eea0c0": {
-          "type": "text",
-          "settings": {
-            "text": "This is a great course you should buy. NOW! pls.",
-            "text_style": "body"
+            "collection": ""
           }
         }
       },
       "block_order": [
-        "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-0",
-        "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-1",
-        "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-2",
-        "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-3",
-        "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-4",
-        "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-5",
-        "template--18666448322863__1684e129-e2b8-4257-b899-7abd686b74e1-16832096434279a52d-6",
-        "5e9f44ad-e0bd-40b1-b074-e5e7b8ce99ba",
-        "7bdbbc05-df7e-4e06-970f-9c4794eea0c0"
+        "collection-0",
+        "product",
+        "collection-1"
       ],
       "settings": {
-<<<<<<< HEAD
         "heading": "Multimedia collage",
         "heading_size": "h2",
         "desktop_layout": "left",
         "mobile_layout": "collage",
         "card_styles": "product-card-wrapper",
-=======
-        "product": "first-course",
-        "color_scheme": "inverse",
-        "secondary_background": true,
-        "media_size": "large",
-        "constrain_to_viewport": true,
-        "media_fit": "cover",
-        "media_position": "right",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
-    "76d2491d-d52f-4e47-b709-425c3f1ec730": {
-      "type": "image-banner",
-      "blocks": {
-        "template--18666448322863__76d2491d-d52f-4e47-b709-425c3f1ec730-1683211006795a46b2-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Pre-employment courses heading",
-            "heading_size": "h1"
-          }
-        },
-        "template--18666448322863__76d2491d-d52f-4e47-b709-425c3f1ec730-1683211006795a46b2-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "template--18666448322863__76d2491d-d52f-4e47-b709-425c3f1ec730-1683211006795a46b2-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "All pre-employment courses",
-            "button_link_1": "shopify:\/\/collections\/epic-courses",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--18666448322863__76d2491d-d52f-4e47-b709-425c3f1ec730-1683211006795a46b2-0",
-        "template--18666448322863__76d2491d-d52f-4e47-b709-425c3f1ec730-1683211006795a46b2-1",
-        "template--18666448322863__76d2491d-d52f-4e47-b709-425c3f1ec730-1683211006795a46b2-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/construction-worker-holding-blueprints.jpg",
-        "image_overlay_opacity": 30,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
->>>>>>> 084ab32d5d170584dcf7fb9ef68a310d02baca41
         "color_scheme": "background-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "2cd505d0-a4b3-4111-bbbe-1210bcbcdc0f": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "f3efadc4-7aac-4d6d-8548-dda34409e1f4": {
-          "type": "heading",
-          "settings": {
-            "heading": "Pre-employment courses heading",
-            "heading_size": "h1"
-          }
-        },
-        "24be2f35-5dc8-441f-bf13-c2f67b436a98": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "f3efadc4-7aac-4d6d-8548-dda34409e1f4",
-        "24be2f35-5dc8-441f-bf13-c2f67b436a98"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/measure-twice-cut-once.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "overlap",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "5c28bef9-7450-4155-bfe4-043fde8770da": {
-      "type": "featured-collection",
+    "video": {
+      "type": "video",
       "settings": {
-<<<<<<< HEAD
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-=======
-        "title": "Pre-employment courses",
-        "heading_size": "h2",
->>>>>>> 084ab32d5d170584dcf7fb9ef68a310d02baca41
         "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
         "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
         "color_scheme": "background-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
+        "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6": {
-      "type": "featured-product",
-      "blocks": {
-        "template--18666448322863__7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6-16832096434279a52d-0": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "template--18666448322863__7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6-16832096434279a52d-1": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "template--18666448322863__7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6-16832096434279a52d-2": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "template--18666448322863__7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6-16832096434279a52d-3": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "template--18666448322863__7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6-16832096434279a52d-4": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "template--18666448322863__7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6-16832096434279a52d-5": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "template--18666448322863__7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6-16832096434279a52d-6": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "template--18666448322863__7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6-16832096434279a52d-0",
-        "template--18666448322863__7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6-16832096434279a52d-1",
-        "template--18666448322863__7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6-16832096434279a52d-2",
-        "template--18666448322863__7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6-16832096434279a52d-3",
-        "template--18666448322863__7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6-16832096434279a52d-4",
-        "template--18666448322863__7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6-16832096434279a52d-5",
-        "template--18666448322863__7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6-16832096434279a52d-6"
-      ],
-      "settings": {
-        "product": "first-course",
-        "color_scheme": "inverse",
-        "secondary_background": true,
-        "media_size": "large",
-        "constrain_to_viewport": true,
-        "media_fit": "cover",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
-    "5aa78a38-2524-4698-958e-4bbfa4501d29": {
-      "type": "rich-text",
-      "blocks": {
-        "template--18666448322863__5aa78a38-2524-4698-958e-4bbfa4501d29-16832102172792e8ab-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Mixed stuff heading",
-            "heading_size": "h0"
-          }
-        },
-        "template--18666448322863__5aa78a38-2524-4698-958e-4bbfa4501d29-16832102172792e8ab-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "template--18666448322863__5aa78a38-2524-4698-958e-4bbfa4501d29-16832102172792e8ab-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "All normal courses",
-            "button_link": "shopify:\/\/collections\/good-courses",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--18666448322863__5aa78a38-2524-4698-958e-4bbfa4501d29-16832102172792e8ab-0",
-        "template--18666448322863__5aa78a38-2524-4698-958e-4bbfa4501d29-16832102172792e8ab-1",
-        "template--18666448322863__5aa78a38-2524-4698-958e-4bbfa4501d29-16832102172792e8ab-2"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
       }
     },
     "multicolumn": {
@@ -481,39 +235,26 @@
         "column1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/helmet.png",
-            "title": "<strong>OHOB is great<\/strong>",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
         },
-        "3839159e-fa06-4153-a070-870ee87565ad": {
+        "column2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/helmet.png",
-            "title": "<strong>OHOB is great<\/strong>",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
         },
-        "7f447388-0d37-4cab-9d62-3f0f37cb0cda": {
+        "column3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/helmet.png",
-            "title": "<strong>OHOB is great<\/strong>",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "3ab9dd5e-ed3e-4f8f-aa57-08b3ff4040ec": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/helmet.png",
-            "title": "<strong>OHOB is great<\/strong>",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -521,91 +262,34 @@
       },
       "block_order": [
         "column1",
-        "3839159e-fa06-4153-a070-870ee87565ad",
-        "7f447388-0d37-4cab-9d62-3f0f37cb0cda",
-        "3ab9dd5e-ed3e-4f8f-aa57-08b3ff4040ec"
+        "column2",
+        "column3"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "left",
+        "columns_desktop": 3,
+        "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-<<<<<<< HEAD
-=======
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
-    "bd1eec48-6e8d-432d-ab76-45cd562dd122": {
-      "type": "collage",
-      "blocks": {
-        "template--18666448322863__bd1eec48-6e8d-432d-ab76-45cd562dd122-16832137190362ee92-1": {
-          "type": "product",
-          "settings": {
-            "product": "second-course",
-            "second_image": false
-          }
-        },
-        "32bc3f7a-1b1d-470b-afac-0f56026d5cc3": {
-          "type": "product",
-          "settings": {
-            "product": "fourth-course",
-            "second_image": false
-          }
-        },
-        "e910b8e3-f50e-4381-bbd9-6a71c42d8b5d": {
-          "type": "product",
-          "settings": {
-            "product": "third-course",
-            "second_image": false
-          }
-        }
-      },
-      "block_order": [
-        "template--18666448322863__bd1eec48-6e8d-432d-ab76-45cd562dd122-16832137190362ee92-1",
-        "32bc3f7a-1b1d-470b-afac-0f56026d5cc3",
-        "e910b8e3-f50e-4381-bbd9-6a71c42d8b5d"
-      ],
-      "settings": {
-        "heading": "Some more courses",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "background-1",
->>>>>>> 084ab32d5d170584dcf7fb9ef68a310d02baca41
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "a6b00bc1-5565-42d0-b296-d2e0ceaea003": {
-      "type": "custom-text",
-      "settings": {
-        "custom_text_title": "Title",
-        "custom_text_body": "<p>Your text goes here<\/p>"
       }
     }
   },
   "order": [
     "image_banner",
-    "3ee230fa-34b2-4ad9-a4cf-a135683cf614",
+    "927a87ce-6f07-4d07-bece-961c0bf52dd4",
+    "rich_text",
     "featured_collection",
-    "1684e129-e2b8-4257-b899-7abd686b74e1",
-    "76d2491d-d52f-4e47-b709-425c3f1ec730",
-    "2cd505d0-a4b3-4111-bbbe-1210bcbcdc0f",
-    "5c28bef9-7450-4155-bfe4-043fde8770da",
-    "7cf6c1c3-ecd1-4b77-8c5d-79e1fad71be6",
-    "5aa78a38-2524-4698-958e-4bbfa4501d29",
-    "multicolumn",
-    "bd1eec48-6e8d-432d-ab76-45cd562dd122",
-    "a6b00bc1-5565-42d0-b296-d2e0ceaea003"
+    "collage",
+    "video",
+    "multicolumn"
   ]
 }
