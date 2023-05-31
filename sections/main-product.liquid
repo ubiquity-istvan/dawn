@@ -304,114 +304,166 @@
 
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
-            {%- when 'buy_buttons' -%}
-              {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
-              <p>This is some text to test if I can edit the button</p>
-              <div {{ block.shopify_attributes }}>
-                {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
-                {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-
-                  {% comment %} Payment Form start {% endcomment %}
-                  {{ form | payment_terms }}
-
-                  <!-- Working YOLO - Add this to the main-product.liquid template file in shopify -->
-
-               
-
-                 
-
-{% assign dates = product.metafields.custom.course_1_dates | split: ',' %}
-{% if dates %}
-  <select
-    class="select__select"
-    id="icon"
-    name="properties[Date]"
-    data-class="properties_date"
-    form="{{ product_form_id }}"
-  >
-    {% for date in dates %}
-      <option value="{{ date | date: "%B %d, %Y" }}">{{ date | date: '%B %d, %Y' }}</option>
-    {% endfor %}
-  </select>
-{% endif %}
-
-
-<!-- Adding input fields -->
-<div class="attendees">
-
-{% comment %} Add more attendees {% endcomment %}
-<a class="button button--full-width button--secondary .attendees" href="#"
->Add more attendees</a
->
-  <p class="line-item-property__field">
-    <label for="first-name">First Name:</label>
-    <input
-      required
-      class="required"
-      id="first-name"
-      type="text"
-      name="properties[First Name]"
-      form="{{ product_form_id }}"
-    >
-  </p>
-
-  <p class="line-item-property__field">
-    <label for="last-name">Last Name</label>
-    <input
-      required
-      class="required"
-      id="last-name"
-      type="text"
-      name="properties[Last Name]"
-      form="{{ product_form_id }}"
-    >
-  </p>
-
-  <p class="line-item-property__field">
-    <label for="age">Age</label>
-    <input
-      required
-      class="required"
-      id="age"
-      type="text"
-      name="properties[Age]"
-      form="{{ product_form_id }}"
-    >
-  </p>
-
-  <p class="line-item-property__field">
-    <label for="contact-number">Contact Number</label>
-    <input
-      required
-      class="required"
-      id="contact-number"
-      type="text"
-      name="properties[Contact Number]"
-      form="{{ product_form_id }}"
-    >
-  </p>
-
-  <p class="line-item-property__field">
-    <label for="email-address">Email Address</label>
-    <input
-      required
-      class="required"
-      id="email-address"
-      type="text"
-      name="properties[Email Address]"
-      form="{{ product_form_id }}"
-    >
-  </p>
-</div>
-
-
-
-                  
-                {%- endform -%}
-                {% comment %} Paymnet form end {% endcomment %}
+              {%- when 'buy_buttons' -%}
+                {% comment %} Checking quantity {% endcomment %}
+                {% comment %} Inventory tracking on product page {% endcomment %}
+                {% assign current_variant = product.selected_or_first_available_variant %}
+                <div class="inventoryNote form__label">
+                {% if current_variant.available %}
+                  {% if current_variant.inventory_quantity > 0 and current_variant.inventory_quantity <= 10 %}There are {{ current_variant.inventory_quantity }} seats left in this course.
+              {% elsif current_variant.inventory_quantity > 10 %}There are plenty of seats available in this course.
+                  {% endif %}
+                {% endif %}
               </div>
-
+  
+                {% comment %} <p id="variant-quantity">Quantity:</p>
+  
+             
+                {% for variant in product.variants %}
+                  {% comment %} Creating variable with variant ids {% endcomment %}
+              
+  
+                  <p>Variant: {{ variant.title }}</p>
+                  <p>Quantity: {{ variant.inventory_quantity }}</p>
+                  <p>Variant ID: {{ variant.id }}</p>
+                  <p>Variant ID: {{ product.selected_or_first_available_variant.id }}</p>
+                {% endfor %} {% endcomment %}
+                
+                <p>Fill in the attendee details below:</p>
+  
+                {% comment %} Bootstrap start {% endcomment %}
+  
+              
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="heading1">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapse1"
+                          aria-expanded="true"
+                          aria-controls="collapse1"
+                        >
+                          Attendee 1 <i class="bi bi-chevron-up"></i>
+                        </button>
+                      </h5>
+                    </div>
+            
+                    <div id="collapse1" class="collapse show" aria-labelledby="heading1">
+                      <div class="card-body">
+                        <div class="attendees">
+                          <p class="line-item-property__field">
+                            <label for="first-name-1">First Name:</label>
+                            <input
+                              required
+                              class="required"
+                              id="first-name-1"
+                              type="text"
+                              name="properties[First Name 1]"
+                              form="{{ product_form_id }}"
+                            />
+                          </p>
+            
+                          <p class="line-item-property__field">
+                            <label for="last-name-1">Last Name</label>
+                            <input
+                              required
+                              class="required"
+                              id="last-name-1"
+                              type="text"
+                              name="properties[Last Name 1]"
+                              form="{{ product_form_id }}"
+                            />
+                          </p>
+            
+                          <p class="line-item-property__field">
+                            <label for="age-1">Age</label>
+                            <input
+                              required
+                              class="required"
+                              id="age-1"
+                              type="text"
+                              name="properties[Age 1]"
+                              form="{{ product_form_id }}"
+                            />
+                          </p>
+            
+                          <p class="line-item-property__field">
+                            <label for="contact-number-1">Contact Number</label>
+                            <input
+                              required
+                              class="required"
+                              id="contact-number-1"
+                              type="text"
+                              name="properties[Contact Number 1]"
+                              form="{{ product_form_id }}"
+                            />
+                          </p>
+            
+                          <p class="line-item-property__field">
+                            <label for="email-address-1">Email Address</label>
+                            <input
+                              required
+                              class="required"
+                              id="email-address-1"
+                              type="text"
+                              name="properties[Email Address 1]"
+                              form="{{ product_form_id }}"
+                            />
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+             
+                </div>
+                {% comment %} Bootstrap end {% endcomment %}
+  
+  {% comment %} Attendess start {% endcomment %}
+                   
+  {% comment %} Course date selector {% endcomment %}
+  {% assign dates = product.metafields.custom.course_1_dates | split: ',' %}
+  {% if dates %}
+    <select
+      class="select__select"
+      id="icon"
+      name="properties[Date]"
+      data-class="properties_date"
+      form="{{ product_form_id }}"
+    >
+      {% for date in dates %}
+        <option value="{{ date | date: "%B %d, %Y" }}">{{ date | date: '%B %d, %Y' }}</option>
+      {% endfor %}
+    </select>
+  {% endif %}
+  
+  
+  
+  
+  
+  {% comment %} Attendess end {% endcomment %}
+  
+                {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
+               
+                <div {{ block.shopify_attributes }}>
+                  {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+                  {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+  
+                    {% comment %} Payment Form start {% endcomment %}
+                    {{ form | payment_terms }}
+  
+                    
+                 
+  
+                 
+  
+                    
+                  {%- endform -%}
+                  {% comment %} Paymnet form end {% endcomment %}
+                </div>
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
@@ -671,22 +723,14 @@
 
 
      {% comment %} Testing For field value update for make {% endcomment %}
-     <script>
-      const submitButton = document.querySelector("#ProductSubmitButton-template--18666448617775__main");
 
-function updateFormField() {
-const formFirstName = document.querySelector("#first-name");
-
-console.log(formFirstName.value);
-
-formFirstName.setAttribute("value", formFirstName.value);
-
-console.log(formFirstName.value);
-}
-
-submitButton.addEventListener("click", updateFormField);
-    </script>
 </section>
+
+<script>
+  {% for variant in product.variants %}
+    variantStock[{{- variant.id -}}] = {{ variant.inventory_quantity }};
+  {% endfor %}
+</script>
 
 {% schema %}
 {

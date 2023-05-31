@@ -34,15 +34,18 @@
         "text",
         "button"
       ],
+      "custom_css": [
+        ".banner__box {max-width: 78rem; -webkit-box-shadow: -15px -15px 0px -3px rgba(5, 126, 82, 1); -moz-box-shadow: -15px -15px 0px -3px rgba(5, 126, 82, 1); box-shadow: -15px -15px 0px -3px rgba(5, 126, 82, 1);}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/construction-in-progress.jpg",
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 30,
         "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
-        "image_behavior": "none",
+        "image_behavior": "ambient",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
@@ -53,6 +56,7 @@
       "blocks": {
         "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-0": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ section.settings.product.vendor }}",
             "text_style": "uppercase"
@@ -75,20 +79,24 @@
             "picker_type": "button"
           }
         },
-        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-4": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
         "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-5": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
         },
+        "f560aff4-08e8-4f6d-b501-6b18bb8087a9": {
+          "type": "text",
+          "settings": {
+            "text": "The Work at Height Regulations 2005 (WAHR) applies to all industries, what you, as an employer need to do to protect your employees from falls from height. It will also be useful to employees and their representatives.",
+            "text_style": "body"
+          }
+        },
         "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-6": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
           }
@@ -99,17 +107,22 @@
         "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-1",
         "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-2",
         "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-3",
-        "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-4",
         "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-5",
+        "f560aff4-08e8-4f6d-b501-6b18bb8087a9",
         "template--19308351750465__927a87ce-6f07-4d07-bece-961c0bf52dd4-168546567375e5ffdc-6"
+      ],
+      "custom_css": [
+        "section {background: white;}",
+        ".product__media {-webkit-box-shadow: 15px -15px 0px -3px rgba(5, 126, 82, 1); -moz-box-shadow: 15px -15px 0px -3px rgba(5, 126, 82, 1); box-shadow: 15px -15px 0px -3px rgba(5, 126, 82, 1);}",
+        "a {background: #1b6739; color: white; padding: 1.5rem 3rem; border-radius: 5px; width: fit-content;}"
       ],
       "settings": {
         "product": "test-course-1",
         "color_scheme": "inverse",
         "secondary_background": true,
-        "media_size": "medium",
+        "media_size": "small",
         "constrain_to_viewport": true,
-        "media_fit": "contain",
+        "media_fit": "cover",
         "media_position": "right",
         "image_zoom": "lightbox",
         "hide_variants": false,
@@ -118,40 +131,14 @@
         "padding_bottom": 36
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Is this the updated text?",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
+      "custom_css": [
+        "h2 {border-bottom: 2px solid #1b6739; white-space: nowrap; margin: 0;}",
+        ".title-wrapper {display: flex;}"
+      ],
       "settings": {
-        "title": "Featured products",
+        "title": "Featured courses",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -176,33 +163,260 @@
         "padding_bottom": 36
       }
     },
-    "collage": {
-      "type": "collage",
+    "af9c6c71-004b-4a3c-9ced-f0ade0a98ad0": {
+      "type": "featured-product",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
+        "548d6f89-abf5-4e4b-8058-ee2cac03e5d2": {
+          "type": "text",
+          "disabled": true,
           "settings": {
-            "collection": ""
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
           }
         },
-        "product": {
-          "type": "product",
+        "cf7ab276-5104-4f8d-8f97-38bdf6a8ebda": {
+          "type": "title",
           "settings": {
-            "product": "",
-            "second_image": false
+            "heading_size": "h1"
           }
         },
-        "collection-1": {
-          "type": "collection",
+        "1c1de565-076d-4779-be56-157c850e9b24": {
+          "type": "price",
           "settings": {
-            "collection": ""
+          }
+        },
+        "102d5939-1abb-4640-bda7-cedc145d847b": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "591a1f8e-51f3-4eaf-8658-bffbf82d83de": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "3c40d79a-14c3-4d69-a96e-a71a629360c7": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "96c6c38f-4223-40b6-a046-479a3b809ce9": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "eb6cce1c-a376-4470-ae25-cde473e8c88d": {
+          "type": "text",
+          "settings": {
+            "text": "The Work at Height Regulations 2005 (WAHR) applies to all industries, what you, as an employer need to do to protect your employees from falls from height. It will also be useful to employees and their representatives.",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "collection-0",
+        "548d6f89-abf5-4e4b-8058-ee2cac03e5d2",
+        "cf7ab276-5104-4f8d-8f97-38bdf6a8ebda",
+        "1c1de565-076d-4779-be56-157c850e9b24",
+        "102d5939-1abb-4640-bda7-cedc145d847b",
+        "591a1f8e-51f3-4eaf-8658-bffbf82d83de",
+        "3c40d79a-14c3-4d69-a96e-a71a629360c7",
+        "96c6c38f-4223-40b6-a046-479a3b809ce9",
+        "eb6cce1c-a376-4470-ae25-cde473e8c88d"
+      ],
+      "custom_css": [
+        ".product__media {-webkit-box-shadow: -15px -15px 0px -3px rgba(255, 255, 255, 1); -moz-box-shadow: -15px -15px 0px -3px rgba(255, 255, 255, 1); box-shadow: -15px -15px 0px -3px rgba(255, 255, 255, 1);}",
+        "a {background: white; color: black; padding: 1.5rem 3rem; border-radius: 5px; width: fit-content;}"
+      ],
+      "settings": {
+        "product": "test-course-1",
+        "color_scheme": "accent-1",
+        "secondary_background": true,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f4e6af01-ef50-47da-8385-5e4c8ecacfca": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {border-bottom: 2px solid #1b6739; white-space: nowrap; margin: 0;}",
+        ".title-wrapper {display: flex;}"
+      ],
+      "settings": {
+        "title": "Pre-employment courses",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "38d0f1a9-69dd-4bd1-81d9-f00a7eb6df69": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19308351750465__38d0f1a9-69dd-4bd1-81d9-f00a7eb6df69-1685532804c8037f5a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Choose Our Construction Training?",
+            "heading_size": "h1"
+          }
+        },
+        "template--19308351750465__38d0f1a9-69dd-4bd1-81d9-f00a7eb6df69-1685532804c8037f5a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Invest in your construction career. Acquire skills and knowledge for a successful and rewarding future.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19308351750465__38d0f1a9-69dd-4bd1-81d9-f00a7eb6df69-1685532804c8037f5a-0",
+        "template--19308351750465__38d0f1a9-69dd-4bd1-81d9-f00a7eb6df69-1685532804c8037f5a-1"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 540px;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shuttle.svg",
+            "title": "Accelerate Your Success",
+            "text": "<p>Fast-track your construction career with our training programs. Gain a competitive edge and unlock exciting opportunities.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rating.svg",
+            "title": "Expert Guidance",
+            "text": "<p>Enhance construction skills with expert instruction. Gain insights, advice, and improve job prospects with our experienced instructors. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wrench.svg",
+            "title": "Hands-On Learning",
+            "text": "<p>Hands-on learning for real-world construction scenarios. Develop skills, confidence, and problem-solving abilities.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "0f0b42eb-76e9-4af2-acff-e41b8a707065": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Arrow_up.svg",
+            "title": "Stay Ahead of the Curve",
+            "text": "<p>Stay current in construction. Our courses cover trends, techniques, and technologies for effective contributions to modern projects.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3",
+        "0f0b42eb-76e9-4af2-acff-e41b8a707065"
+      ],
+      "custom_css": [
+        "ul li {border: 1px solid black; padding: 30px 10px;}",
+        "img {width: 75px; height: 75px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "product": {
+          "type": "product",
+          "settings": {
+            "product": "test-course-1",
+            "second_image": false
+          }
+        },
+        "55222deb-93f0-4c18-9e4e-cf3f3ccdc72a": {
+          "type": "product",
+          "settings": {
+            "product": "test-course-1",
+            "second_image": false
+          }
+        },
+        "3c7e916d-91f2-4406-b9ad-1b7656032b21": {
+          "type": "product",
+          "settings": {
+            "product": "test-course-1",
+            "second_image": false
+          }
+        }
+      },
+      "block_order": [
         "product",
-        "collection-1"
+        "55222deb-93f0-4c18-9e4e-cf3f3ccdc72a",
+        "3c7e916d-91f2-4406-b9ad-1b7656032b21"
+      ],
+      "custom_css": [
+        "h2 {border-bottom: 2px solid #1b6739; white-space: nowrap; align-self: flex-start; width: fit-content;}"
       ],
       "settings": {
         "heading": "Multimedia collage",
@@ -214,82 +428,16 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "image_banner",
     "927a87ce-6f07-4d07-bece-961c0bf52dd4",
-    "rich_text",
     "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "af9c6c71-004b-4a3c-9ced-f0ade0a98ad0",
+    "f4e6af01-ef50-47da-8385-5e4c8ecacfca",
+    "38d0f1a9-69dd-4bd1-81d9-f00a7eb6df69",
+    "multicolumn",
+    "collage"
   ]
 }
